@@ -21,21 +21,21 @@ describe "database" do
   end
 
   #############
-  # User Class
+  # memes Class
   #############
 
-  describe "User CRUD methods" do
-    data = {name: "Joe", password: "123"}
-    describe ".create_user" do
-      xit "creates an entry in @users hash" do
-        db.create_user(data)
-        expect(db.users.size).to eq(1)
-        expect(db.users[1][:id]).to eq(1)
-        expect(db.users[1][:name]).to eq("Joe")
-        expect(db.users[1][:password]).to eq("123")
+  describe "memes CRUD methods" do
+    data = {username: "Shehzan", password: "123"}
+    describe ".create_memes" do
+      xit "creates an entry in @memes hash" do
+        db.memes(data)
+        expect(db.memes.size).to eq(1)
+        expect(db.memes[1][:id]).to eq(1)
+        expect(db.memes[1][:username]).to eq("Shehzan")
+        expect(db.memes[1][:password]).to eq("123")
       end
-      xit "returns a user object" do
-        user1 = db.create_user(data)
+      xit "returns an memes object" do
+        user1 = db.create_memes(data)
         expect(user1).to be_a(Memeblr::User)
         expect(user1.id).to eq(1)
         expect(user1.name).to eq("Joe")
@@ -44,7 +44,7 @@ describe "database" do
     end
     describe ".get_user" do
       xit "returns the correct user object" do
-        db.create_user(data)
+        db.create_memes(data)
         user1 = db.get_user(1)
         expect(user1).to be_a(Memeblr::User)
         expect(user1.id).to eq(1)
@@ -55,7 +55,7 @@ describe "database" do
 
     describe ".update_user" do
       xit "updates the correct user" do
-        user1 = db.create_user(data)
+        user1 = db.create_memes(data)
         expect(user1.name).to eq("Joe")
         user1 = db.update_user(1,{name: "Bob"})
         expect(user1).to be_a(Memeblr::User)
@@ -66,31 +66,31 @@ describe "database" do
       xit "does nothing if user doesn't exist" do
         # ERROR: undefined method `merge!' for nil:NilClass
         # need to add check in update_user so it doesnt do anything if nil
-        db.create_user(data)
-        expect(db.users.size).to eq(1)
+        db.create_memes(data)
+        expect(db.memes.size).to eq(1)
         user1 = db.update_user(45,{name: "Bob"})
         expect(user1).to eq(nil)
-        expect(db.users.size).to eq(1)
+        expect(db.memes.size).to eq(1)
       end
     end
 
     describe ".delete_user" do
       xit "deletes the correct user" do
         # ERROR
-        # @users.delete[id] should be
-        # @users.delete(id) -- change brackets to parentheses
-        db.create_user(data)
-        expect(db.users.size).to eq(1)
+        # @memes.delete[id] should be
+        # @memes.delete(id) -- change brackets to parentheses
+        db.create_memes(data)
+        expect(db.memes.size).to eq(1)
         db.delete_user(1)
-        expect(db.users.size).to eq(0)
+        expect(db.memes.size).to eq(0)
       end
       xit "does nothing if user not found or empty hash" do
         db.delete_user(45)
-        expect(db.users.size).to eq(0)
-        db.create_user(data)
-        expect(db.users.size).to eq(1)
+        expect(db.memes.size).to eq(0)
+        db.create_memes(data)
+        expect(db.memes.size).to eq(1)
         db.delete_user(45)
-        expect(db.users.size).to eq(1)
+        expect(db.memes.size).to eq(1)
       end
     end
   end
