@@ -1,6 +1,6 @@
 module Memeblr
 
-  class Admin
+  class Admins
 
     attr_reader :id, :username, :password
     def initiailize(data)

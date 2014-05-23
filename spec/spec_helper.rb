@@ -1,8 +1,8 @@
-require './lib/rps.rb'
+require './lib/memeblr.rb'
 
-# include RPS
+# include Memeblr
 RSpec.configure do |config|
   config.before(:each) do
-    RPS.instance_variable_set(:@__db_instance, nil)
+    Memeblr.instance_variable_set(:@__db_instance, nil)
   end
 end

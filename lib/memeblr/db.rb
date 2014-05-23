@@ -4,10 +4,12 @@ module Memeblr
 
   class DB
 
-    attr_reader :memes, :next_meme_id
+    attr_reader :memes, :next_meme_id, :admins, :next_admin_id
     def initialize
       @memes = {}
       @next_meme_id = 0
+      @admins = {}
+      @next_admin_id = 0
     end
 
     #MEME-create meme
@@ -35,6 +37,30 @@ module Memeblr
       @memes.delete(id)
     end
 
+    #Admin-create admin
+    def create_admin(data)
+      @next_admin_id += 1
+      data[:id] = @next_admin_id
+      @admins[@next_admin_id] = data
+      build_admin(data)
+    end
+
+    #MEME - retrieve meme
+    def get_meme(id)
+      data = @admins[id]
+      build_admin(data)
+    end
+
+    #MEME - update meme
+    def update_meme(id, data)
+      @admins[id].merge!(data)
+      build_admin(@admins[id])
+    end
+
+    #MEME -delete meme
+    def delete_meme(id)
+      @admins.delete(id)
+    end
 
   end
 end
