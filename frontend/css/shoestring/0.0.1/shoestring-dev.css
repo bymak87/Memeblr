@@ -1,0 +1,383 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* line 3, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/body.sass */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 9, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/body.sass */
+body {
+  margin: 0; }
+
+/* line 4, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/embedded-content.sass */
+img {
+  border: 0; }
+
+/* line 8, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/embedded-content.sass */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 10, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 20, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+button {
+  overflow: visible; }
+
+/* line 27, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+button,
+select {
+  text-transform: none; }
+
+/* line 36, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 42, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 47, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 54, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+input {
+  line-height: normal; }
+
+/* line 61, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 69, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 76, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 85, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 90, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 97, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 102, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+textarea {
+  overflow: auto; }
+
+/* line 107, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/forms.sass */
+optgroup {
+  font-weight: bold; }
+
+/* line 5, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/grouping.sass */
+figure {
+  margin: 1em 40px; }
+
+/* line 9, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/grouping.sass */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 15, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/grouping.sass */
+pre {
+  overflow: auto; }
+
+/* line 19, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/grouping.sass */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 6, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/html5.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 22, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/html5.sass */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 31, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/html5.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 37, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/html5.sass */
+[hidden],
+template {
+  display: none; }
+
+/* line 4, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/links.sass */
+a {
+  background: transparent;
+  text-decoration: none; }
+
+/* line 9, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/links.sass */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 4, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/tables.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 8, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/tables.sass */
+td,
+th {
+  padding: 0; }
+
+/* line 4, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 8, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 13, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+dfn {
+  font-style: italic; }
+
+/* line 18, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 23, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+mark {
+  background: yellow;
+  color: black; }
+
+/* line 28, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+small {
+  font-size: 80%; }
+
+/* line 32, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 40, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+sup {
+  top: -0.5em; }
+
+/* line 43, /Users/minico/code/mks/frontend/project-shoestring-sass/sass/shoestring/normalize/text-semantics.sass */
+sub {
+  bottom: -0.25em; }
+
+/* clear fix */
+/* line 12, ../../../sass/shoestring/clearfix.sass */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 17, ../../../sass/shoestring/clearfix.sass */
+.clearfix:after {
+  clear: both; }
+
+/* line 23, ../../../sass/shoestring/clearfix.sass */
+.clearfix {
+  *zoom: 1; }
+
+/* line 4, ../../../sass/shoestring/grid.sass */
+html {
+  font-size: 100%; }
+
+@media (min-width: 40rem) {
+  /* line 8, ../../../sass/shoestring/grid.sass */
+  html {
+    font-size: 112%; } }
+@media (min-width: 64rem) {
+  /* line 11, ../../../sass/shoestring/grid.sass */
+  html {
+    font-size: 120%; } }
+/* line 14, ../../../sass/shoestring/grid.sass */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 17, ../../../sass/shoestring/grid.sass */
+.container {
+  margin: 0 auto;
+  max-width: 48em;
+  width: 90%; }
+  /* line 21, ../../../sass/shoestring/grid.sass */
+  .container.demo {
+    margin-bottom: 10px; }
+
+/* line 24, ../../../sass/shoestring/grid.sass */
+.full-width-container {
+  margin: 0 auto;
+  width: 100%; }
+
+/* line 29, ../../../sass/shoestring/grid.sass */
+.column.demo {
+  background: #cccccc; }
+
+@media (min-width: 40rem) {
+  /* line 33, ../../../sass/shoestring/grid.sass */
+  .column {
+    float: left;
+    margin-right: 1rem;
+    padding-right: 1rem; }
+    /* line 37, ../../../sass/shoestring/grid.sass */
+    .column.full {
+      width: 100%; }
+    /* line 39, ../../../sass/shoestring/grid.sass */
+    .column.two-thirds {
+      width: 63.7%; }
+    /* line 41, ../../../sass/shoestring/grid.sass */
+    .column.half {
+      width: 47.5%; }
+    /* line 43, ../../../sass/shoestring/grid.sass */
+    .column.third {
+      width: 31.2%; }
+    /* line 45, ../../../sass/shoestring/grid.sass */
+    .column.fourth {
+      width: 22.5%; }
+    /* line 47, ../../../sass/shoestring/grid.sass */
+    .column.fourth-padded {
+      width: 23%;
+      margin-right: 2%; }
+    /* line 50, ../../../sass/shoestring/grid.sass */
+    .column.three-fourths {
+      width: 72.9%; }
+    /* line 52, ../../../sass/shoestring/grid.sass */
+    .column.flow-opposite {
+      float: right;
+      padding-right: 0;
+      margin-right: 0; }
+    /* line 59, ../../../sass/shoestring/grid.sass */
+    .column img {
+      width: 100%; } }
+/* line 13, ../../../sass/shoestring/main.sass */
+body {
+  background: #5e6052; }
+  /* line 15, ../../../sass/shoestring/main.sass */
+  body .logo {
+    color: black; }
+
+/* line 19, ../../../sass/shoestring/main.sass */
+.g-mode, #like, #prev {
+  background: url(../../../images/sprites.png) no-repeat; }
+
+/* line 23, ../../../sass/shoestring/main.sass */
+.g-mode {
+  background-position: -171.99307px -426.98614px;
+  width: 35px;
+  height: 25px; }
+
+/* line 28, ../../../sass/shoestring/main.sass */
+#next {
+  background-position: -223.97917px -417.00002px;
+  width: 144px;
+  height: 110px; }
+
+/* line 33, ../../../sass/shoestring/main.sass */
+#prev {
+  background-position: -429.00006px -419.98962px;
+  width: 144px;
+  height: 110px; }
+
+/* line 38, ../../../sass/shoestring/main.sass */
+#like {
+  background-position: -11.98611px -421.99658px;
+  width: 69px;
+  height: 100px; }
+
+@media (min-width: 40rem) {
+  /* line 45, ../../../sass/shoestring/main.sass */
+  .g-mode {
+    background-position: -264.97919px -244.97918px;
+    width: 50px;
+    height: 36px; }
+
+  /* line 49, ../../../sass/shoestring/main.sass */
+  #next {
+    background-position: -9.97917px -531.97917px;
+    width: 193px;
+    height: 147px; }
+
+  /* line 53, ../../../sass/shoestring/main.sass */
+  #prev {
+    background-position: -492.9792px 0;
+    width: 257px;
+    height: 196px; }
+
+  /* line 57, ../../../sass/shoestring/main.sass */
+  #like {
+    background-position: -8.98611px -238.98611px; } }
+@media (min-width: 64rem) {
+  /* line 65, ../../../sass/shoestring/main.sass */
+  .g-mode {
+    background-position: -339.00003px -2.98611px;
+    width: 75px;
+    height: 54px; }
+
+  /* line 70, ../../../sass/shoestring/main.sass */
+  #like {
+    background-position: 0 -1px;
+    width: 162px;
+    height: 236px; }
+
+  /* line 75, ../../../sass/shoestring/main.sass */
+  #next {
+    background-position: -352.97917px -195.00002px; }
+
+  /* line 80, ../../../sass/shoestring/main.sass */
+  #prev {
+    background-position: -492.9792px 0; } }

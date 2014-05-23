@@ -1,0 +1,84 @@
+// adding normalize to override browser defaults
+@import normalize
+
+// provide clearfix
+@import clearfix
+
+// add variables file
+@import vars
+
+// Add gridding and responsive design
+@import grid
+
+body
+  background: #5e6052
+  .logo
+    color: black
+    height 50em
+
+.g-mode, #like, #prev
+  background: $thug-life
+
+// set smallest as default here
+.g-mode
+  background-position: -171.99307250976562px -426.986141204834px
+  width: 35px
+  height: 25px
+
+#next
+  background-position: -223.9791717529297px -417.00001525878906px
+  width: 144px
+  height: 110px
+
+#prev
+  background-position: -429.00006103515625px -419.98962020874023px
+  width: 144px
+  height: 110px
+
+#like
+  background-position: -11.986114501953125px -421.99657821655273px
+  width: 69px
+  height: 100px
+
+// then use tablet size
+@media (min-width: 40rem)
+  .g-mode
+    background-position: -264.97918701171875px -244.97918319702148px
+    width: 50px
+    height: 36px
+  #next
+    background-position: -9.979171752929688px -531.9791717529297px
+    width: 193px
+    height: 147px
+  #prev
+    background-position: -492.9792022705078px 0
+    width: 257px
+    height: 196px
+  #like
+    background-position: -8.986114501953125px -238.98611068725586px
+    width 121px
+    height 176px
+
+// desktop size
+sizes reflect different sprites
+@media (min-width: 64rem)
+  .g-mode
+    background-position: -339.0000305175781px -2.9861106872558594px
+    width: 75px
+    height: 54px
+
+  #like
+    background-position: 0 -1px
+    width: 162px
+    height: 236px
+
+  #next
+    background-position: -352.9791717529297px -195.00001525878906px
+    width 257px
+    height 196px
+
+  #prev
+    background-position: -492.9792022705078px 0
+    width 257px
+    height 196px
+
