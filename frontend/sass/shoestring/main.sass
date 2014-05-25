@@ -19,6 +19,7 @@ body
     margin-left: .5em
 
   #like
+    visibility: hidden
     position: fixed
     bottom: 0
     margin-left: 1em
@@ -38,6 +39,21 @@ header
   height: 2.3em
 
 // set smallest as default here
+.admin-like
+  color: green
+  font-size: 1em
+  float: right
+  margin-top: .7em
+  margin-right: .75em
+
+.delete
+  color: #bb0208
+  font-weight: lighter
+  font-size: 1em
+  float: right
+  margin-top: .7em
+  margin-right: .75em
+
 #wrapper
   margin-left: 3.5em
 
@@ -104,6 +120,14 @@ header
 
 // then use tablet size
 @media (min-width: 40rem)
+  .admin-like
+    font-size: 1.25em
+    margin-top: .6em
+
+  .delete
+    font-size: 1.25em
+    margin-top: .6em
+
   #wrapper
     margin-left: 6em
 
@@ -154,6 +178,14 @@ header
 // desktop size
 sizes reflect different sprites
 @media (min-width: 64rem)
+  .admin-like
+    font-size: 1.5em
+    margin-top: .75em
+
+  .delete
+    font-size: 1.5em
+    margin-top: .75em
+
   #wrapper
     margin-left: 11em
 
