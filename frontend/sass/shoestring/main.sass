@@ -19,7 +19,7 @@ body
     margin-left: .5em
 
   #like
-    position: absolute
+    position: fixed
     bottom: 0
     margin-left: 1em
 
@@ -29,17 +29,21 @@ body
 .column
   background: $current-meme
 
-// set smallest as default here
 header
+  position: fixed
   background-color: #0f0f0f
+  clear: all
   height: 2.3em
 
+// set smallest as default here
 .column
   background-color: #0f0f0f
   position: absolute
+  margin-bottom: 0
+  height: 10em
   min-height: 90%
   min-width: 100%
-  background-size: 50%
+  background-size: 45%
 
 .submit
   float: right
@@ -56,16 +60,6 @@ header
   width: 35px
   height: 25px
 
-// #next
-//   background-position: -1325.0000762939453px -549.0000152587891px
-//   width: 113px
-//   height: 87px
-
-// #prev
-//   background-position: -84px -569.0000762939453px
-//   width: 113px
-//   height: 87px
-
 #like
   background-position: -1162.0000762939453px -601.0000152587891px
   width: 69px
@@ -75,6 +69,9 @@ header
 @media (min-width: 40rem)
   header
     height: 2.8em
+
+  .column
+    height: 28em
 
   .submit
     padding-top: .3em
@@ -86,16 +83,6 @@ header
     background-position: -683.0000152587891px -410.00001525878906px
     width: 50px
     height: 36px
-
-  // #next
-  //   background-position: -1315.0000762939453px -408.00001525878906px
-  //   width: 150px
-  //   height: 115px
-
-  // #prev
-  //   background-position: -60px -429.00001525878906px
-  //   width: 150px
-  //   height: 115px
 
   #like
     background-position: -891.0000762939453px -529.0000152587891px
