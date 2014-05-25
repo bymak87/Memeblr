@@ -342,7 +342,7 @@ header {
 .column {
   background-color: #0f0f0f;
   position: absolute;
-  min-height: 100%;
+  min-height: 90%;
   min-width: 100%;
   background-size: 50%; }
 
