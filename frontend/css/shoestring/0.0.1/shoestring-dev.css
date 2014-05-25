@@ -335,12 +335,11 @@ body {
 
 /* line 32, ../../../sass/shoestring/main.sass */
 header {
-  position: fixed;
   background-color: #0f0f0f;
   clear: all;
   height: 2.3em; }
 
-/* line 39, ../../../sass/shoestring/main.sass */
+/* line 38, ../../../sass/shoestring/main.sass */
 .column {
   background-color: #0f0f0f;
   position: absolute;
@@ -350,38 +349,39 @@ header {
   min-width: 100%;
   background-size: 45%; }
 
-/* line 48, ../../../sass/shoestring/main.sass */
+/* line 47, ../../../sass/shoestring/main.sass */
 .submit {
   float: right;
   vertical-align: middle; }
 
-/* line 52, ../../../sass/shoestring/main.sass */
+/* line 51, ../../../sass/shoestring/main.sass */
 .logo {
   color: white;
   font-size: 1.5em;
   padding-top: 0.175em;
   text-align: center; }
 
-/* line 58, ../../../sass/shoestring/main.sass */
+/* line 57, ../../../sass/shoestring/main.sass */
 .g-mode {
   background-position: -602.00002px -412.00002px;
   width: 35px;
   height: 25px; }
 
-/* line 63, ../../../sass/shoestring/main.sass */
+/* line 62, ../../../sass/shoestring/main.sass */
 #like {
   background-position: -1162.00008px -601.00002px;
   width: 69px;
   height: 100px; }
 
 @media (min-width: 40rem) {
-  /* line 70, ../../../sass/shoestring/main.sass */
+  /* line 69, ../../../sass/shoestring/main.sass */
   header {
     height: 2.8em; }
 
-  /* line 73, ../../../sass/shoestring/main.sass */
+  /* line 72, ../../../sass/shoestring/main.sass */
   .column {
-    height: 28em; }
+    height: 14em;
+    min-height: 90%; }
 
   /* line 76, ../../../sass/shoestring/main.sass */
   .submit {
