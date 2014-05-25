@@ -304,46 +304,45 @@ html {
     /* line 59, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
     .column img {
       width: 100%; } }
-/* line 13, ../../../sass/shoestring/main.sass */
+/* line 6, ../../../sass/shoestring/main.sass */
 body {
-  background: #0f0f0f; }
-  /* line 16, ../../../sass/shoestring/main.sass */
+  background: url(http://cdn.smosh.com/sites/default/files/bloguploads/thug-life-meme-glasses.jpeg) no-repeat center center fixed;
+    background--webkit-background-size: cover;
+    background--moz-background-size: cover;
+    background--o-background-size: cover;
+    background-background-size: cover; }
+  /* line 13, ../../../sass/shoestring/main.sass */
   body #submit-image {
     background-color: #747474;
     text-align: center;
     border: none;
     margin-top: 0.5em;
     margin-right: 0.5em; }
-  /* line 23, ../../../sass/shoestring/main.sass */
+  /* line 20, ../../../sass/shoestring/main.sass */
   body .submit {
     float: right; }
-  /* line 26, ../../../sass/shoestring/main.sass */
+  /* line 23, ../../../sass/shoestring/main.sass */
   body .g-mode {
     float: left;
     margin-top: 0.5em;
     margin-left: 0.5em; }
-  /* line 31, ../../../sass/shoestring/main.sass */
-  body .memes {
-    margin-left: auto;
-    margin-right: auto;
-    width: 41%;
-    max-width: 41%;
-    background: pink; }
+  /* line 28, ../../../sass/shoestring/main.sass */
+  body #like {
+    position: absolute;
+    bottom: 0; }
+  /* line 32, ../../../sass/shoestring/main.sass */
+  body #next, body #prev {
+    vertical-align: middle; }
 
-/* line 38, ../../../sass/shoestring/main.sass */
+/* line 35, ../../../sass/shoestring/main.sass */
 .g-mode, #like, #prev, #next {
   background: url(../../../images/sprites.png) no-repeat; }
 
-/* line 42, ../../../sass/shoestring/main.sass */
+/* line 39, ../../../sass/shoestring/main.sass */
 .column div {
   display: inline-block; }
 
-/* line 45, ../../../sass/shoestring/main.sass */
-#like {
-  margin-left: -2em;
-  margin-bottom: -0.22em; }
-
-/* line 49, ../../../sass/shoestring/main.sass */
+/* line 42, ../../../sass/shoestring/main.sass */
 .logo {
   margin-left: auto;
   margin-right: auto;
@@ -352,88 +351,88 @@ body {
   padding-top: 5%;
   font-size: 2em; }
 
-/* line 57, ../../../sass/shoestring/main.sass */
+/* line 50, ../../../sass/shoestring/main.sass */
 .g-mode {
   background-position: -602.00002px -412.00002px;
   width: 35px;
   height: 25px; }
 
-/* line 62, ../../../sass/shoestring/main.sass */
+/* line 55, ../../../sass/shoestring/main.sass */
 #next {
   background-position: -1325.00008px -549.00002px;
   width: 113px;
   height: 87px; }
 
-/* line 67, ../../../sass/shoestring/main.sass */
+/* line 60, ../../../sass/shoestring/main.sass */
 #prev {
   background-position: -84px -569.00008px;
   width: 113px;
   height: 87px; }
 
-/* line 72, ../../../sass/shoestring/main.sass */
+/* line 65, ../../../sass/shoestring/main.sass */
 #like {
   background-position: -1162.00008px -601.00002px;
   width: 69px;
   height: 100px; }
 
 @media (min-width: 40rem) {
-  /* line 79, ../../../sass/shoestring/main.sass */
+  /* line 72, ../../../sass/shoestring/main.sass */
   .logo {
     color: white;
     font-size: 4em;
     padding-top: 5%;
     font-size: 3em; }
 
-  /* line 86, ../../../sass/shoestring/main.sass */
+  /* line 79, ../../../sass/shoestring/main.sass */
   .g-mode {
     background-position: -683.00002px -410.00002px;
     width: 50px;
     height: 36px; }
 
-  /* line 91, ../../../sass/shoestring/main.sass */
+  /* line 84, ../../../sass/shoestring/main.sass */
   #next {
     background-position: -1315.00008px -408.00002px;
     width: 150px;
     height: 115px; }
 
-  /* line 96, ../../../sass/shoestring/main.sass */
+  /* line 89, ../../../sass/shoestring/main.sass */
   #prev {
     background-position: -60px -429.00002px;
     width: 150px;
     height: 115px; }
 
-  /* line 101, ../../../sass/shoestring/main.sass */
+  /* line 94, ../../../sass/shoestring/main.sass */
   #like {
     background-position: -891.00008px -529.00002px;
     width: 121px;
     height: 176px; } }
 @media (min-width: 64rem) {
-  /* line 109, ../../../sass/shoestring/main.sass */
+  /* line 102, ../../../sass/shoestring/main.sass */
   .logo {
     color: white;
     font-size: 5em;
     padding-top: 0;
     font-size: 5em; }
 
-  /* line 116, ../../../sass/shoestring/main.sass */
+  /* line 109, ../../../sass/shoestring/main.sass */
   .g-mode {
     background-position: -771.00002px -406.00002px;
     width: 75px;
     height: 54px; }
 
-  /* line 121, ../../../sass/shoestring/main.sass */
+  /* line 114, ../../../sass/shoestring/main.sass */
   #next {
     background-position: -1302.00008px -230.00002px;
     width: 200px;
     height: 153px; }
 
-  /* line 126, ../../../sass/shoestring/main.sass */
+  /* line 119, ../../../sass/shoestring/main.sass */
   #prev {
     background-position: -32px -244.00002px;
     width: 200px;
     height: 153px; }
 
-  /* line 131, ../../../sass/shoestring/main.sass */
+  /* line 124, ../../../sass/shoestring/main.sass */
   #like {
     background-position: -538.00002px -470.00002px;
     width: 162px;

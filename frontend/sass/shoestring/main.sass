@@ -1,17 +1,14 @@
-// adding normalize to override browser defaults
 @import normalize
-
-// provide clearfix
 @import clearfix
-
-// add variables file
 @import vars
-
-// Add gridding and responsive design
 @import grid
 
 body
-  background: #0f0f0f
+  background: $current-meme no-repeat center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
 
   #submit-image
     background-color: #747474
@@ -28,12 +25,12 @@ body
     margin-top: .5em
     margin-left: .5em
 
-  .memes
-    margin-left: auto
-    margin-right: auto
-    width: 41%
-    max-width: 41%
-    background: pink
+  #like
+    position: absolute
+    bottom: 0
+
+  #next, #prev
+    vertical-align: middle
 
 .g-mode, #like, #prev, #next
   background: $thug-life
@@ -41,10 +38,6 @@ body
 // set smallest as default here
 .column div
   display: inline-block
-
-#like
-  margin-left: -2em
-  margin-bottom: -0.22em
 
 .logo
   margin-left: auto
