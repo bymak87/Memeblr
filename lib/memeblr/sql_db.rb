@@ -1,7 +1,10 @@
-class Memeblr::SQLDB
+require 'sqlite3'
+# require_relative 'memeblr.rb'
+
+class MEMEBLR::SQLDB
 
   def initialize
-    @db = SQLite3::Database.new "test.db"
+    @db = SQLite3::DB.new("test.db")
 
     @db.execute <<-SQL
     CREATE TABLE IF NOT EXISTS memes(
@@ -24,21 +27,22 @@ class Memeblr::SQLDB
   end
 
   def build_meme(data)
-    Memeblr::Meme.new(data)
+    MEMEBLR::Memes.new(id: data[:id], url: data[:url])
   end
 
-  def create_meme(data)
+  def add_meme(data)
     @db.execute <<-SQL
-    INSERT INTO memes (id, title, url)
-    VALUES ("#{data[:title]}", "#{data[:url]}")
+    INSERT INTO memes (id, url)
+    VALUES ("#{data[:url]}")
     SQL
   end
 
   def get_meme(id)
     record = @db.execute <<-SQL
-    SELECT * FROM memes
+    SELECT url FROM memes
     WHERE id = "#{id}"
     SQL
+    build_meme(record.all)
   end
 
   def delete_meme(data, id)
@@ -49,7 +53,7 @@ class Memeblr::SQLDB
   end
 
   def build_admin(data)
-    Memeblr::Admin.new(data)
+    MEMEBLR::Admins.new(id: data[:id], username: data[:username], password: data[:password])
   end
 
   def create_admin(data)

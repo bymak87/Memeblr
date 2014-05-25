@@ -8,5 +8,5 @@ get '/' do
 end
 
 post '/upload' do
-  @filename = paramas[:filename]
+  @url = paramas[:url]
 end
