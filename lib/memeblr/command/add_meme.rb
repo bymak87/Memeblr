@@ -1,12 +1,14 @@
-class MEMEBLR::AddMeme
-  def run(meme_data)
-    meme = MEMEBLR.db.add_meme(meme_data[:url])
-    return {success?: false, error: "meme does not exist"} if !meme
-    return {success?: false, error: "incorrect password"} if meme.password != meme_data[:password]
+module MEMEBLR
+  class AddMeme < Command
 
-    {
-      success?: true,
-      meme: meme
-    }
+    def run(meme_data)
+      memes = MEMEBLR.db.get_meme(url: meme_data[:url])
+      return failure(:meme_already_exixts) if memes
+
+      meme = MEMEBLR.db.create_meme(meme_data)
+      return failure(:meme_not_stored) if meme.nil?
+
+      success(:meme => meme)
+    end
   end
 end

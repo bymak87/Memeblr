@@ -1,10 +1,12 @@
 class MEMEBLR::Memes
 
-    attr_reader :id, :url
+    attr_reader :id, :url, :like
 
-    def initialize(meme_data)
-      @id = meme_data[:id]
-      @url = meme_data[:url]
+
+    def initialize(id, url, like=false)
+      @id = id
+      @url = url
+      @like = like
     end
 
 end

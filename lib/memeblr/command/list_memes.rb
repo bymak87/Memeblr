@@ -1,10 +1,14 @@
-class MEMEBLR::ListMemes
-  def run
-    memes = MEMEBLR.db.get_all_memes
-  return {success?: false, error: "Error listing memes."} if memes.nil?
-    {
-      success?: true,
-      memes: memes
-    }
+module MEMEBLR
+  class ListMemes < Command
+
+    def run(meme_data)
+
+      memes = MEMEBLR.db.get_meme_by_name(meme_data[:url])
+
+      return failure(:meme_does_not_exist) if memes.nil?
+
+
+      success(:meme => meme)
+    end
   end
 end
