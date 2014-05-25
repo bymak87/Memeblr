@@ -326,20 +326,45 @@ body {
     margin-left: 1em; }
 
 /* line 26, ../../../sass/shoestring/main.sass */
-.g-mode, #like, #prev, #next {
+.g-mode, #like {
   background: url(../../../images/sprites.png) no-repeat; }
 
 /* line 29, ../../../sass/shoestring/main.sass */
+.lolz {
+  background: url(../../../images/login-sprites.png) no-repeat; }
+
+/* line 32, ../../../sass/shoestring/main.sass */
 .column {
   background: url(http://winningateverything.com/files/2011/06/jake2.jpg) no-repeat center; }
 
-/* line 32, ../../../sass/shoestring/main.sass */
+/* line 35, ../../../sass/shoestring/main.sass */
 header {
   background-color: #0f0f0f;
   clear: all;
   height: 2.3em; }
 
-/* line 38, ../../../sass/shoestring/main.sass */
+/* line 41, ../../../sass/shoestring/main.sass */
+#wrapper {
+  margin-left: 3.5em; }
+
+/* line 44, ../../../sass/shoestring/main.sass */
+.log-in {
+  background: #fea7cb;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  height: 5em;
+  margin-right: 4em;
+  margin-left: 4em;
+  border: 3px solid #a2f4c7; }
+
+/* line 54, ../../../sass/shoestring/main.sass */
+.lolz {
+  background-position: -690.96396px -8.99437px;
+  width: 138px;
+  height: 156px; }
+
+/* line 59, ../../../sass/shoestring/main.sass */
 .column {
   background-color: #0f0f0f;
   position: absolute;
@@ -349,79 +374,152 @@ header {
   min-width: 100%;
   background-size: 45%; }
 
-/* line 47, ../../../sass/shoestring/main.sass */
+/* line 68, ../../../sass/shoestring/main.sass */
 .submit {
   float: right;
   vertical-align: middle; }
 
-/* line 51, ../../../sass/shoestring/main.sass */
+/* line 72, ../../../sass/shoestring/main.sass */
 .logo {
   color: white;
   font-size: 1.5em;
   padding-top: 0.175em;
   text-align: center; }
 
-/* line 57, ../../../sass/shoestring/main.sass */
+/* line 78, ../../../sass/shoestring/main.sass */
+.admin-logo {
+  color: white;
+  font-size: 1.8em;
+  padding-top: 4.5em;
+  padding-left: 4.7em;
+  text-align: center; }
+
+/* line 85, ../../../sass/shoestring/main.sass */
 .g-mode {
   background-position: -602.00002px -412.00002px;
   width: 35px;
   height: 25px; }
 
-/* line 62, ../../../sass/shoestring/main.sass */
+/* line 90, ../../../sass/shoestring/main.sass */
 #like {
   background-position: -1162.00008px -601.00002px;
   width: 69px;
   height: 100px; }
 
+/* line 95, ../../../sass/shoestring/main.sass */
+#username, #password {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%; }
+
+/* line 102, ../../../sass/shoestring/main.sass */
+#bot-cushion {
+  height: 4em; }
+
 @media (min-width: 40rem) {
-  /* line 69, ../../../sass/shoestring/main.sass */
+  /* line 107, ../../../sass/shoestring/main.sass */
+  #wrapper {
+    margin-left: 6em; }
+
+  /* line 110, ../../../sass/shoestring/main.sass */
+  .admin-logo {
+    font-size: 3em;
+    padding-top: 2.9em;
+    padding-left: 3.5em; }
+
+  /* line 115, ../../../sass/shoestring/main.sass */
+  .log-in {
+    padding-top: 1.35em;
+    padding-bottom: 1em;
+    height: 6em;
+    width: 70%;
+    margin-left: 6em;
+    border: 5px solid #a2f4c7; }
+    /* line 123, ../../../sass/shoestring/main.sass */
+    .log-in #username, .log-in #password {
+      max-width: 20em; }
+
+  /* line 126, ../../../sass/shoestring/main.sass */
+  .lolz {
+    background-position: -651.94815px -179.98949px;
+    width: 184px;
+    height: 208px; }
+
+  /* line 131, ../../../sass/shoestring/main.sass */
   header {
     height: 2.8em; }
 
-  /* line 72, ../../../sass/shoestring/main.sass */
+  /* line 134, ../../../sass/shoestring/main.sass */
   .column {
     height: 14em;
     min-height: 90%; }
 
-  /* line 76, ../../../sass/shoestring/main.sass */
+  /* line 138, ../../../sass/shoestring/main.sass */
   .submit {
     padding-top: 0.3em; }
 
-  /* line 79, ../../../sass/shoestring/main.sass */
+  /* line 141, ../../../sass/shoestring/main.sass */
   .logo {
     font-size: 2em; }
 
-  /* line 82, ../../../sass/shoestring/main.sass */
+  /* line 144, ../../../sass/shoestring/main.sass */
   .g-mode {
     background-position: -683.00002px -410.00002px;
     width: 50px;
     height: 36px; }
 
-  /* line 87, ../../../sass/shoestring/main.sass */
+  /* line 149, ../../../sass/shoestring/main.sass */
   #like {
     background-position: -891.00008px -529.00002px;
     width: 121px;
     height: 176px; } }
 @media (min-width: 64rem) {
-  /* line 95, ../../../sass/shoestring/main.sass */
+  /* line 157, ../../../sass/shoestring/main.sass */
+  #wrapper {
+    margin-left: 11em; }
+
+  /* line 160, ../../../sass/shoestring/main.sass */
+  .admin-logo {
+    font-size: 4.5em;
+    padding-top: 2.3em;
+    padding-left: 2.5em; }
+
+  /* line 165, ../../../sass/shoestring/main.sass */
+  .log-in {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    height: 8em;
+    max-width: 50em;
+    margin-left: 11em;
+    border: 7px solid #a2f4c7; }
+
+  /* line 173, ../../../sass/shoestring/main.sass */
+  .lolz {
+    background-position: -374.95908px -47.96733px;
+    width: 246px;
+    height: 278px; }
+
+  /* line 178, ../../../sass/shoestring/main.sass */
   header {
     height: 3.6em; }
 
-  /* line 98, ../../../sass/shoestring/main.sass */
+  /* line 181, ../../../sass/shoestring/main.sass */
   .submit {
     padding-top: 0.75em; }
 
-  /* line 101, ../../../sass/shoestring/main.sass */
+  /* line 184, ../../../sass/shoestring/main.sass */
   .g-mode {
     background-position: -771.00002px -406.00002px;
     width: 75px;
     height: 54px; }
 
-  /* line 106, ../../../sass/shoestring/main.sass */
+  /* line 189, ../../../sass/shoestring/main.sass */
   .logo {
     font-size: 2.5em; }
 
-  /* line 119, ../../../sass/shoestring/main.sass */
+  /* line 192, ../../../sass/shoestring/main.sass */
   #like {
     background-position: -538.00002px -470.00002px;
     width: 162px;

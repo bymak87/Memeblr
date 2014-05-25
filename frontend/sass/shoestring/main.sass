@@ -23,8 +23,11 @@ body
     bottom: 0
     margin-left: 1em
 
-.g-mode, #like, #prev, #next
+.g-mode, #like
   background: $thug-life
+
+.lolz
+  background: $admin
 
 .column
   background: $current-meme
@@ -35,6 +38,24 @@ header
   height: 2.3em
 
 // set smallest as default here
+#wrapper
+  margin-left: 3.5em
+
+.log-in
+  background: #fea7cb
+  padding-top: 1em
+  padding-bottom: 1em
+  text-align: center
+  height: 5em
+  margin-right: 4em
+  margin-left: 4em
+  border: 3px solid #a2f4c7
+
+.lolz
+  background-position: -690.9639587402344px -8.994369506835938px
+  width: 138px
+  height: 156px
+
 .column
   background-color: #0f0f0f
   position: absolute
@@ -54,6 +75,13 @@ header
   padding-top: .175em
   text-align: center
 
+.admin-logo
+  color: white
+  font-size: 1.8em
+  padding-top: 4.5em
+  padding-left: 4.7em
+  text-align: center
+
 .g-mode
   background-position: -602.0000152587891px -412.00001525878906px
   width: 35px
@@ -64,8 +92,42 @@ header
   width: 69px
   height: 100px
 
+#username, #password
+  text-align: center
+  display: block
+  margin-left: auto
+  margin-right: auto
+  width: 70%
+
+#bot-cushion
+  height: 4em
+
 // then use tablet size
 @media (min-width: 40rem)
+  #wrapper
+    margin-left: 6em
+
+  .admin-logo
+    font-size: 3em
+    padding-top: 2.9em
+    padding-left: 3.5em
+
+  .log-in
+    padding-top: 1.35em
+    padding-bottom: 1em
+    height: 6em
+    width: 70%
+    margin-left: 6em
+    border: 5px solid #a2f4c7
+
+    #username, #password
+      max-width: 20em
+
+  .lolz
+    background-position: -651.9481506347656px -179.98948669433594px
+    width: 184px
+    height: 208px
+
   header
     height: 2.8em
 
@@ -92,6 +154,27 @@ header
 // desktop size
 sizes reflect different sprites
 @media (min-width: 64rem)
+  #wrapper
+    margin-left: 11em
+
+  .admin-logo
+    font-size: 4.5em
+    padding-top: 2.3em
+    padding-left: 2.5em
+
+  .log-in
+    padding-top: 2em
+    padding-bottom: 1em
+    height: 8em
+    max-width: 50em
+    margin-left: 11em
+    border: 7px solid #a2f4c7
+
+  .lolz
+    background-position: -374.9590759277344px -47.96733093261719px
+    width: 246px
+    height: 278px
+
   header
     height: 3.6em
 
@@ -105,16 +188,6 @@ sizes reflect different sprites
 
   .logo
     font-size: 2.5em
-
-  // #next
-  //   background-position: -1302.0000762939453px -230.00001525878906px
-  //   width: 200px
-  //   height: 153px
-
-  // #prev
-  //   background-position: -32px -244.00001525878906px
-  //   width: 200px
-  //   height: 153px
 
   #like
     background-position: -538.0000152587891px -470.00001525878906px
