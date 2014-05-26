@@ -10,9 +10,18 @@ get '/' do
   erb :home
 end
 
+post '/' do
+  p params
+  url = params[:url]
+  MEMEBLR::AddMeme.run(url)
+end
+
 get '/admin' do
+  erb :admin
+end
 
-
+post '/admin-admin_view' do
+  puts params
   if "shizzy" == params[:username] && "password" == params[:password]
     redirect to '/admin_view'
   # else

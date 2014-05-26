@@ -1,8 +1,8 @@
 module MEMEBLR
   class AddMeme < Command
 
-    def run(meme_data)
-      meme = MEMEBLR.db.create_meme(url: meme_data[:url])
+    def run(url)
+      meme = MEMEBLR.db.create_meme(url)
 
       # memes = MEMEBLR.db.get_meme(url: meme_data[:url])
       # return {:success => false, :error => "meme already exists"} if meme[:url]
