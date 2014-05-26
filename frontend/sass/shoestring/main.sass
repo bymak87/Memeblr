@@ -32,7 +32,7 @@ body
     bottom: 0
     margin-left: 1em
 
-.g-mode, #like, #g-like, #arrow-left, #arrow-right
+.g-mode, #like, #g-like
   background: $thug-life
 
 .lolz
@@ -90,21 +90,31 @@ header
   background-size: 45%
 
 #next
-  background: pink
   width: 15%
   height: 100%
   position: absolute
   margin-left: 85%
   float: left
-  opacity: 0.1
+  text-align: center
+  color: #0f0f0f
+  font-size: 4em
+  padding-top: 3em
 
 #prev
-  background: pink
   width: 15%
   height: 100%
   position: relative
   float: left
+  text-align: center
+  color: #0f0f0f
+  font-size: 4em
+  padding-top: 3em
+
+#prev:hover, #next:hover
+  background: pink
   opacity: 0.1
+  width: 15%
+  height: 100%
 
 .submit
   float: right
@@ -147,12 +157,6 @@ header
 
 #bot-cushion
   height: 4em
-
-// #arrow-right
-
-
-// #arrow-left
-
 
 // then use tablet size
 @media (min-width: 40rem)

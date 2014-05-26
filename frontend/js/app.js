@@ -21,13 +21,16 @@ $(document).ready(function(){
     alert('prev image');
   })
 
-  $('#prev').on('mouseenter', function() {
-
+  $('#prev').mouseover(function(){
+    $(this).addClass('.hover');
   })
+
+
 
 });
 
 // finish toggle from dislike to like
+// fix g-mode to only work if liked
 // finish toggle from g-mode to regular
 // add gunshot audio on click
 
