@@ -4,8 +4,8 @@ require 'sqlite3'
 class MEMEBLR::SQLDB
   attr_reader :db
 
-  def initialize
-    @db = SQLite3::Database.new("test.db")
+  def initialize(file)
+    @db = SQLite3::Database.new(file)
 
     @db.execute <<-SQL
     CREATE TABLE IF NOT EXISTS memes(
@@ -39,7 +39,7 @@ class MEMEBLR::SQLDB
     result = @db.execute <<-SQL
       SELECT * FROM memes WHERE id=(SELECT MAX (id) FROM memes);
     SQL
-    data = result.flatten
+    data[:id] = result.flatten
     build_meme(data)
   end
 
@@ -58,6 +58,15 @@ class MEMEBLR::SQLDB
     SQL
   end
 
+  def like_meme(data)
+    @db.execute <<-SQL
+    UPDATE memes
+    SET like = true
+    WHERE id = "#{data[:id]}"; #maybe not string
+    SQL
+    build_meme(data)
+  end
+
 #Admin#
 
   def build_admin(data)
@@ -65,11 +74,19 @@ class MEMEBLR::SQLDB
   end
 
   def create_admin(data)
-   ad = @db.execute <<-SQL
+    @db.execute <<-SQL
     INSERT INTO admins (username, password)
     VALUES ("#{data[:username]}", "#{data[:password]}");
     SQL
-    build_admin(ad)
+
+    result = @db.execute <<-SQL
+    SELECT * FROM users
+    WHERE id = (SELECT MAX (id)
+    FROM memes
+    );
+    SQL
+    data[:id] = result.flatten
+    build_admin(data)
   end
 
   def get_admin(data, username)
@@ -89,6 +106,6 @@ end
 #singleton
   module MEMEBLR
     def self.db
-      @___db_instance ||=SQLDB.new
+      @___db_instance ||= SQLDB.new("app.db")
     end
   end

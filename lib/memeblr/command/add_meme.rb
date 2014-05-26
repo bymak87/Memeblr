@@ -2,13 +2,14 @@ module MEMEBLR
   class AddMeme < Command
 
     def run(meme_data)
-      memes = MEMEBLR.db.get_meme(url: meme_data[:url])
-      return failure(:meme_already_exixts) if memes
+      meme = MEMEBLR.db.create_meme(url: meme_data[:url])
 
-      meme = MEMEBLR.db.create_meme(meme_data)
-      return failure(:meme_not_stored) if meme.nil?
+      # memes = MEMEBLR.db.get_meme(url: meme_data[:url])
+      # return {:success => false, :error => "meme already exists"} if meme[:url]
 
-      success(:meme => meme)
+
+      return {:success? => false, :error => "Meme could not stored"} if meme.nil?
+      {:success? => true, :meme => meme}
     end
   end
 end

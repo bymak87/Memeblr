@@ -5,12 +5,12 @@ module MEMEBLR
       # validate: admin exists?
 
       admin = MEMEBLR.db.get_admin_by_name(data[:username])
-      return failure(:admin_name_does_not_exist) if admin.nil?
+      return failure(:success? => false, :error =>"Admin username does not exist") if admin.nil?
 
       if admin.password != data[:password] || admin.name != data[:username]
-        return failure(:invalid_admin_or_password)
+        return failure(:success? =>false, :error => "invalid admin or password")
       end
-      success(:admin => admin)
+      success(:success? => true, :admin => admin, :message => "Successful login")
     end
   end
 end

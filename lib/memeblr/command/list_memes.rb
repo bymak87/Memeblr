@@ -3,12 +3,12 @@ module MEMEBLR
 
     def run(meme_data)
 
-      memes = MEMEBLR.db.get_meme_by_name(meme_data[:url])
+      memes = MEMEBLR.db.list_memes(meme_data[:id])
 
-      return failure(:meme_does_not_exist) if memes.nil?
+      return {:error => "meme does not exist"} if memes.nil?
 
 
-      success(:meme => meme)
+      {:success => true, :meme => memes}
     end
   end
 end
