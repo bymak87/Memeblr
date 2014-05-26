@@ -1,7 +1,10 @@
 $(document).ready(function(){
   $('.admin-like').on('click', function() {
-    $(this).text('dislike');
-    $('#like').show();
+    $('#like').slideToggle(3000);
+    $(this).text(function(i, text) {
+      return text === 'like' ? 'dislike' : 'like';
+    });
+
   })
 
   $('.g-mode').on('click', function() {
