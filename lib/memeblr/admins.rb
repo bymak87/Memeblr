@@ -1,14 +1,11 @@
-module Memeblr
-
-  class Admins
+class MEMEBLR::Admins
 
     attr_reader :id, :username, :password
-    def initiailize(data)
-      @id = data[:id]
-      @username = data[:username]
-      @password = data[:password]
+    def initialize(id, username, password)
+      @id = id
+      @username = username
+      @password = password
     end
 
-  end
 
 end

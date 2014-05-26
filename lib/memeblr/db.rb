@@ -1,10 +1,6 @@
-require 'pry'
+class MEMEBLR::DB
 
-module Memeblr
-
-  class DB
-
-    attr_reader :memes, :next_meme_id, :admins, :next_admin_id
+  attr_reader :memes, :next_meme_id, :admins, :next_admin_id
     def initialize
       @memes = {}
       @next_meme_id = 0
@@ -62,5 +58,5 @@ module Memeblr
       @admins.delete(id)
     end
 
-  end
+
 end

@@ -3,14 +3,14 @@ require 'spec_helper'
 
 describe "database" do
 
-  let(:db) {Memeblr::DB.new}
+  let(:db) {MEMEBLR::DB.new}
   describe "db as a singleton" do
-    it "returns a DB object" do
-      expect(db).to be_a(Memeblr::DB)
+    xit "returns a DB object" do
+      expect(db).to be_a(MEMEBLR::DB)
     end
   end
   describe ".initialize method" do
-    it "initialized db should empty hashes and id counters as 0" do
+    xit "initialized db should empty hashes and id counters as 0" do
       expect(db.admins).to be_a(Hash)
       expect(db.admins.size).to eq(0)
       expect(db.next_admin_id).to eq(0)
@@ -28,7 +28,7 @@ describe "database" do
   describe "Admins CRUD methods" do
     data = {username: "Shehzan", password: "123"}
     describe ".create_admin" do
-      it "creates an entry in @admins hash" do
+      xit "creates an entry in @admins hash" do
         db.admins(data)
         expect(db.admins.size).to eq(1)
         expect(db.admins[1][:id]).to eq(1)
@@ -37,7 +37,7 @@ describe "database" do
       end
       xit "returns an admin object" do
         admin1 = db.create_admin(data)
-        expect(admin1).to be_a(Memeblr::Admins)
+        expect(admin1).to be_a(MEMEBLR::Admins)
         expect(admin1.id).to eq(1)
         expect(admin1.name).to eq("Shehzan")
         expect(admin1.password).to eq("123")
@@ -47,7 +47,7 @@ describe "database" do
       xit "returns the correct admins object" do
         db.create_admin(data)
         admin1 = db.get_admins(1)
-        expect(admin1).to be_a(Memeblr::admin)
+        expect(admin1).to be_a(MEMEBLR::Admins)
         expect(admin1.id).to eq(1)
         expect(admin1.name).to eq("Joe")
         expect(admin1.password).to eq("123")
@@ -59,7 +59,7 @@ describe "database" do
         admin1 = db.create_admin(data)
         expect(admin1.name).to eq("Joe")
         admin1 = db.update_admin(1,{name: "Bob"})
-        expect(admin1).to be_a(Memeblr::admin)
+        expect(admin1).to be_a(MEMEBLR::Admins)
         expect(admin1.id).to eq(1)
         expect(admin1.name).to eq("Bob")
         expect(admin1.password).to eq("123")

@@ -1,8 +1,9 @@
 require './lib/memeblr.rb'
 
-# include Memeblr
+ include MEMEBLR
+
 RSpec.configure do |config|
   config.before(:each) do
-    Memeblr.instance_variable_set(:@__db_instance, nil)
+    MEMEBLR.instance_variable_set(:@__db_instance, nil)
   end
 end

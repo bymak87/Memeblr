@@ -1,15 +1,13 @@
-module Memeblr
+class MEMEBLR::Memes
 
-  class Meme
+    attr_reader :id, :url, :like
 
-    attr_reader :id, :title, :file, :like
-    def initiailize(data)
-      @id = data[:id]
-      @title = data[:title]
-      @file = data[:file]
-      @like = false
+
+    def initialize(id, url, like=false)
+      @id = id
+      @url = url
+      @like = like
     end
 
-  end
 
 end
