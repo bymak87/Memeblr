@@ -1,15 +1,16 @@
 require 'sinatra'
 require 'rubygems'
+require_relative './lib/memeblr.rb'
 
 set :bind, '0.0.0.0'
 
 get '/' do
-  meme = MEMEBLR::GetMeme.new.run
-  @meme = meme.meme
+   # meme = MEMEBLR::GetMeme.new.run
+   # @meme = meme.meme
   erb :home
 end
 
-post '/' do
+post '/admin' do
   @name = params[:username]
   @pass = params[:password]
   @result = MEMEBLR::AdminLogin.run(@username, @password)
