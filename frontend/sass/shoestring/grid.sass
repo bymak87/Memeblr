@@ -1,0 +1,60 @@
+@import vars
+@import mixins
+
+html
+  font-size: 100%
+
+@media (min-width: 40rem)
+  html
+    font-size: 112%
+@media (min-width: 64rem)
+  html
+    font-size: 120%
+
+*, *:before, *:after
+  +box-sizing
+
+.container
+  margin: 0 auto
+  max-width: 48em
+  width: 90%
+  &.demo
+    margin-bottom: 10px // for DEMO purposes
+
+.full-width-container
+  margin: 0 auto
+  width: 100%
+
+.column
+  &.demo
+    background: #ccc // for DEMO purposes
+
+@media (min-width: 40rem)
+  .column
+    float: left
+    margin-right: 1rem
+    padding-right: 1rem
+    &.full
+      width: 100%
+    &.two-thirds
+      width: 63.7%
+    &.half
+      width: 47.5%
+    &.third
+      width: 31.2%
+    &.fourth
+      width: 22.5%
+    &.fourth-padded
+      width: 23%
+      margin-right: 2%
+    &.three-fourths
+      width: 72.9%
+    &.flow-opposite
+      float: right
+      padding-right: 0
+      margin-right: 0
+    // this is not in the video
+    // but checkout what it does for
+    // the four cats
+    img
+      width: 100%

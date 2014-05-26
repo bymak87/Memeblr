@@ -1,0 +1,634 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* line 3, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/body.sass */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 9, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/body.sass */
+body {
+  margin: 0; }
+
+/* line 4, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/embedded-content.sass */
+img {
+  border: 0; }
+
+/* line 8, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/embedded-content.sass */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 10, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 20, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+button {
+  overflow: visible; }
+
+/* line 27, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+button,
+select {
+  text-transform: none; }
+
+/* line 36, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 42, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 47, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 54, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+input {
+  line-height: normal; }
+
+/* line 61, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 69, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 76, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 85, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 90, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 97, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 102, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+textarea {
+  overflow: auto; }
+
+/* line 107, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/forms.sass */
+optgroup {
+  font-weight: bold; }
+
+/* line 5, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/grouping.sass */
+figure {
+  margin: 1em 40px; }
+
+/* line 9, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/grouping.sass */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 15, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/grouping.sass */
+pre {
+  overflow: auto; }
+
+/* line 19, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/grouping.sass */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 6, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/html5.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 22, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/html5.sass */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 31, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/html5.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 37, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/html5.sass */
+[hidden],
+template {
+  display: none; }
+
+/* line 4, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/links.sass */
+a {
+  background: transparent;
+  text-decoration: none; }
+
+/* line 9, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/links.sass */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 4, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/tables.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 8, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/tables.sass */
+td,
+th {
+  padding: 0; }
+
+/* line 4, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 8, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 13, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+dfn {
+  font-style: italic; }
+
+/* line 18, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 23, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+mark {
+  background: yellow;
+  color: black; }
+
+/* line 28, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+small {
+  font-size: 80%; }
+
+/* line 32, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 40, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+sup {
+  top: -0.5em; }
+
+/* line 43, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/normalize/text-semantics.sass */
+sub {
+  bottom: -0.25em; }
+
+/* clear fix */
+/* line 12, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/clearfix.sass */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 17, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/clearfix.sass */
+.clearfix:after {
+  clear: both; }
+
+/* line 23, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/clearfix.sass */
+.clearfix {
+  *zoom: 1; }
+
+/* line 4, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+html {
+  font-size: 100%; }
+
+@media (min-width: 40rem) {
+  /* line 8, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+  html {
+    font-size: 112%; } }
+@media (min-width: 64rem) {
+  /* line 11, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+  html {
+    font-size: 120%; } }
+/* line 14, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 17, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+.container {
+  margin: 0 auto;
+  max-width: 48em;
+  width: 90%; }
+  /* line 21, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+  .container.demo {
+    margin-bottom: 10px; }
+
+/* line 24, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+.full-width-container {
+  margin: 0 auto;
+  width: 100%; }
+
+/* line 29, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+.column.demo {
+  background: #cccccc; }
+
+@media (min-width: 40rem) {
+  /* line 33, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+  .column {
+    float: left;
+    margin-right: 1rem;
+    padding-right: 1rem; }
+    /* line 37, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.full {
+      width: 100%; }
+    /* line 39, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.two-thirds {
+      width: 63.7%; }
+    /* line 41, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.half {
+      width: 47.5%; }
+    /* line 43, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.third {
+      width: 31.2%; }
+    /* line 45, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.fourth {
+      width: 22.5%; }
+    /* line 47, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.fourth-padded {
+      width: 23%;
+      margin-right: 2%; }
+    /* line 50, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.three-fourths {
+      width: 72.9%; }
+    /* line 52, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column.flow-opposite {
+      float: right;
+      padding-right: 0;
+      margin-right: 0; }
+    /* line 59, /Users/minico/code/mks/hackathon/Memeblr/frontend/sass/shoestring/grid.sass */
+    .column img {
+      width: 100%; } }
+/* line 6, ../../../sass/shoestring/main.sass */
+body {
+  background: #0f0f0f; }
+  /* line 9, ../../../sass/shoestring/main.sass */
+  body #submit-image {
+    background-color: #747474;
+    text-align: center;
+    border: none;
+    margin-top: 0.5em;
+    margin-right: 0.5em; }
+  /* line 16, ../../../sass/shoestring/main.sass */
+  body .g-mode {
+    float: left;
+    margin-top: 0.5em;
+    margin-left: 0.5em; }
+  /* line 21, ../../../sass/shoestring/main.sass */
+  body #like {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    margin-left: 1em; }
+  /* line 28, ../../../sass/shoestring/main.sass */
+  body #g-like {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    margin-left: 1em; }
+
+/* line 35, ../../../sass/shoestring/main.sass */
+.g-mode, #like, #g-like {
+  background: url(../../../images/sprites.png) no-repeat; }
+
+/* line 38, ../../../sass/shoestring/main.sass */
+.lolz {
+  background: url(../../../images/login-sprites.png) no-repeat; }
+
+/* line 41, ../../../sass/shoestring/main.sass */
+.column {
+  background: url(http://winningateverything.com/files/2011/06/jake2.jpg) no-repeat center; }
+
+/* line 44, ../../../sass/shoestring/main.sass */
+header {
+  background-color: #0f0f0f;
+  clear: all;
+  height: 2.3em; }
+
+/* line 50, ../../../sass/shoestring/main.sass */
+.admin-like {
+  color: green;
+  font-size: 1em;
+  float: right;
+  margin-top: 0.7em;
+  margin-right: 0.75em; }
+
+/* line 57, ../../../sass/shoestring/main.sass */
+.delete {
+  color: #bb0208;
+  font-weight: lighter;
+  font-size: 1em;
+  float: right;
+  margin-top: 0.7em;
+  margin-right: 0.75em; }
+
+/* line 65, ../../../sass/shoestring/main.sass */
+#wrapper {
+  margin-left: 3.5em; }
+
+/* line 68, ../../../sass/shoestring/main.sass */
+.log-in {
+  background: #fea7cb;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  height: 5em;
+  margin-right: 4em;
+  margin-left: 4em;
+  border: 3px solid #a2f4c7; }
+
+/* line 78, ../../../sass/shoestring/main.sass */
+.lolz {
+  background-position: -690.96396px -8.99437px;
+  width: 138px;
+  height: 156px; }
+
+/* line 83, ../../../sass/shoestring/main.sass */
+.column {
+  background-color: #0f0f0f;
+  position: absolute;
+  margin-bottom: 0;
+  height: 10em;
+  min-height: 90%;
+  min-width: 100%;
+  background-size: 45%; }
+
+/* line 92, ../../../sass/shoestring/main.sass */
+#next {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  margin-left: 85%;
+  float: left;
+  text-align: center;
+  color: #0f0f0f;
+  font-size: 1em;
+  padding-top: 4em; }
+
+/* line 103, ../../../sass/shoestring/main.sass */
+#prev {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+  color: #0f0f0f;
+  font-size: 1em;
+  padding-top: 4em; }
+
+/* line 113, ../../../sass/shoestring/main.sass */
+#prev:hover, #next:hover {
+  background: pink;
+  opacity: 0.1;
+  width: 15%;
+  height: 100%; }
+
+/* line 119, ../../../sass/shoestring/main.sass */
+.submit {
+  float: right;
+  vertical-align: middle; }
+
+/* line 123, ../../../sass/shoestring/main.sass */
+.logo {
+  color: white;
+  font-size: 1.5em;
+  padding-top: 0.175em;
+  text-align: center; }
+
+/* line 129, ../../../sass/shoestring/main.sass */
+.admin-logo {
+  color: white;
+  font-size: 1.8em;
+  padding-top: 4.5em;
+  padding-left: 4.7em;
+  text-align: center; }
+
+/* line 136, ../../../sass/shoestring/main.sass */
+.g-mode {
+  background-position: -602.00002px -412.00002px;
+  width: 35px;
+  height: 25px; }
+
+/* line 141, ../../../sass/shoestring/main.sass */
+#like {
+  background-position: -1162.00008px -601.00002px;
+  width: 69px;
+  height: 100px; }
+
+/* line 146, ../../../sass/shoestring/main.sass */
+#g-like {
+  background-position: -1243.00008px -601.00002px;
+  width: 70px;
+  height: 101px; }
+
+/* line 151, ../../../sass/shoestring/main.sass */
+#username, #password {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%; }
+
+/* line 158, ../../../sass/shoestring/main.sass */
+#button {
+  margin-top: 0.5em;
+  border: none;
+  color: #0f0f0f;
+  background: #a2f4c7; }
+
+/* line 164, ../../../sass/shoestring/main.sass */
+#bot-cushion {
+  height: 4em; }
+
+@media (min-width: 40rem) {
+  /* line 169, ../../../sass/shoestring/main.sass */
+  .admin-like {
+    font-size: 1.25em;
+    margin-top: 0.6em; }
+
+  /* line 173, ../../../sass/shoestring/main.sass */
+  .delete {
+    font-size: 1.25em;
+    margin-top: 0.6em; }
+
+  /* line 177, ../../../sass/shoestring/main.sass */
+  #wrapper {
+    margin-left: 6em; }
+
+  /* line 180, ../../../sass/shoestring/main.sass */
+  .admin-logo {
+    font-size: 3em;
+    padding-top: 2.9em;
+    padding-left: 3.5em; }
+
+  /* line 185, ../../../sass/shoestring/main.sass */
+  .log-in {
+    padding-top: 1.35em;
+    padding-bottom: 1em;
+    height: 6em;
+    width: 70%;
+    margin-left: 6em;
+    border: 5px solid #a2f4c7; }
+    /* line 193, ../../../sass/shoestring/main.sass */
+    .log-in #username, .log-in #password {
+      max-width: 20em; }
+
+  /* line 196, ../../../sass/shoestring/main.sass */
+  .lolz {
+    background-position: -651.94815px -179.98949px;
+    width: 184px;
+    height: 208px; }
+
+  /* line 201, ../../../sass/shoestring/main.sass */
+  header {
+    height: 2.8em; }
+
+  /* line 204, ../../../sass/shoestring/main.sass */
+  .column {
+    height: 14em;
+    min-height: 90%; }
+
+  /* line 208, ../../../sass/shoestring/main.sass */
+  .submit {
+    padding-top: 0.3em; }
+
+  /* line 211, ../../../sass/shoestring/main.sass */
+  .logo {
+    font-size: 2em; }
+
+  /* line 214, ../../../sass/shoestring/main.sass */
+  .g-mode {
+    background-position: -683.00002px -410.00002px;
+    width: 50px;
+    height: 36px; }
+
+  /* line 219, ../../../sass/shoestring/main.sass */
+  #like {
+    background-position: -891.00008px -529.00002px;
+    width: 121px;
+    height: 176px; }
+
+  /* line 224, ../../../sass/shoestring/main.sass */
+  #g-like {
+    background-position: -1026.00008px -527.00002px;
+    width: 122px;
+    height: 178px; }
+
+  /* line 229, ../../../sass/shoestring/main.sass */
+  #prev, #next {
+    font-size: 2.5em;
+    padding-top: 4.5em; } }
+@media (min-width: 64rem) {
+  /* line 236, ../../../sass/shoestring/main.sass */
+  .admin-like {
+    font-size: 1.5em;
+    margin-top: 0.75em; }
+
+  /* line 240, ../../../sass/shoestring/main.sass */
+  .delete {
+    font-size: 1.5em;
+    margin-top: 0.75em; }
+
+  /* line 244, ../../../sass/shoestring/main.sass */
+  #wrapper {
+    margin-left: 11em; }
+
+  /* line 247, ../../../sass/shoestring/main.sass */
+  .admin-logo {
+    font-size: 4.5em;
+    padding-top: 2.3em;
+    padding-left: 2.5em; }
+
+  /* line 252, ../../../sass/shoestring/main.sass */
+  .log-in {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    height: 8em;
+    max-width: 50em;
+    margin-left: 11em;
+    border: 7px solid #a2f4c7; }
+
+  /* line 260, ../../../sass/shoestring/main.sass */
+  .lolz {
+    background-position: -374.95908px -47.96733px;
+    width: 246px;
+    height: 278px; }
+
+  /* line 265, ../../../sass/shoestring/main.sass */
+  header {
+    height: 3.6em; }
+
+  /* line 268, ../../../sass/shoestring/main.sass */
+  .submit {
+    padding-top: 0.75em; }
+
+  /* line 271, ../../../sass/shoestring/main.sass */
+  .g-mode {
+    background-position: -771.00002px -406.00002px;
+    width: 75px;
+    height: 54px; }
+
+  /* line 276, ../../../sass/shoestring/main.sass */
+  .logo {
+    font-size: 2.5em; }
+
+  /* line 279, ../../../sass/shoestring/main.sass */
+  #like {
+    background-position: -538.00002px -470.00002px;
+    width: 162px;
+    height: 236px; }
+
+  /* line 284, ../../../sass/shoestring/main.sass */
+  #g-like {
+    background-position: -713.00002px -470.00002px;
+    width: 163px;
+    height: 238px; }
+
+  /* line 289, ../../../sass/shoestring/main.sass */
+  #prev, #next {
+    font-size: 3.5em; } }

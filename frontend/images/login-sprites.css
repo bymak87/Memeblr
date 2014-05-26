@@ -1,0 +1,28 @@
+.Untitled, .login-med, .login-small, .login-xsmall{
+	background: url(sprites.png) no-repeat;
+}
+
+.Untitled{
+	background-position: -2.933197021484375px -17.971115112304688px ;
+	width: 329px;
+	height: 372px;
+}
+
+.login-med{
+	background-position: -374.9590759277344px -47.96733093261719px ;
+	width: 246px;
+	height: 278px;
+}
+
+.login-small{
+	background-position: -651.9481506347656px -179.98948669433594px ;
+	width: 184px;
+	height: 208px;
+}
+
+.login-xsmall{
+	background-position: -690.9639587402344px -8.994369506835938px ;
+	width: 138px;
+	height: 156px;
+}
+

@@ -1,0 +1,296 @@
+@import normalize
+@import clearfix
+@import vars
+@import grid
+
+body
+  background: #0f0f0f
+
+  #submit-image
+    background-color: #747474
+    text-align: center
+    border: none
+    margin-top: .5em
+    margin-right: .5em
+
+  .g-mode
+    float: left
+    margin-top: .5em
+    margin-left: .5em
+
+  #like
+    // visibility: hidden
+    display: none
+    position: fixed
+    bottom: 0
+    margin-left: 1em
+
+  #g-like
+    // visibility: hidden
+    display: none
+    position: fixed
+    bottom: 0
+    margin-left: 1em
+
+.g-mode, #like, #g-like
+  background: $thug-life
+
+.lolz
+  background: $admin
+
+.column
+  background: $current-meme
+
+header
+  background-color: #0f0f0f
+  clear: all
+  height: 2.3em
+
+// set smallest as default here
+.admin-like
+  color: green
+  font-size: 1em
+  float: right
+  margin-top: .7em
+  margin-right: .75em
+
+.delete
+  color: #bb0208
+  font-weight: lighter
+  font-size: 1em
+  float: right
+  margin-top: .7em
+  margin-right: .75em
+
+#wrapper
+  margin-left: 3.5em
+
+.log-in
+  background: #fea7cb
+  padding-top: 1em
+  padding-bottom: 1em
+  text-align: center
+  height: 5em
+  margin-right: 4em
+  margin-left: 4em
+  border: 3px solid #a2f4c7
+
+.lolz
+  background-position: -690.9639587402344px -8.994369506835938px
+  width: 138px
+  height: 156px
+
+.column
+  background-color: #0f0f0f
+  position: absolute
+  margin-bottom: 0
+  height: 10em
+  min-height: 90%
+  min-width: 100%
+  background-size: 45%
+
+#next
+  width: 15%
+  height: 100%
+  position: absolute
+  margin-left: 85%
+  float: left
+  text-align: center
+  color: #0f0f0f
+  font-size: 1em
+  padding-top: 4em
+
+#prev
+  width: 15%
+  height: 100%
+  position: relative
+  float: left
+  text-align: center
+  color: #0f0f0f
+  font-size: 1em
+  padding-top: 4em
+
+#prev:hover, #next:hover
+  background: pink
+  opacity: 0.1
+  width: 15%
+  height: 100%
+
+.submit
+  float: right
+  vertical-align: middle
+
+.logo
+  color: white
+  font-size: 1.5em
+  padding-top: .175em
+  text-align: center
+
+.admin-logo
+  color: white
+  font-size: 1.8em
+  padding-top: 4.5em
+  padding-left: 4.7em
+  text-align: center
+
+.g-mode
+  background-position: -602.0000152587891px -412.00001525878906px
+  width: 35px
+  height: 25px
+
+#like
+  background-position: -1162.0000762939453px -601.0000152587891px
+  width: 69px
+  height: 100px
+
+#g-like
+  background-position: -1243.0000762939453px -601.0000152587891px
+  width: 70px
+  height: 101px
+
+#username, #password
+  text-align: center
+  display: block
+  margin-left: auto
+  margin-right: auto
+  width: 70%
+
+#button
+  margin-top: .5em
+  border: none
+  color: #0f0f0f
+  background: #a2f4c7
+
+#urlsubmit
+  margin-top: .5em
+  border: none
+  color: #0f0f0f
+  background: #a2f4c7
+
+#bot-cushion
+  height: 4em
+
+// then use tablet size
+@media (min-width: 40rem)
+  .admin-like
+    font-size: 1.25em
+    margin-top: .6em
+
+  .delete
+    font-size: 1.25em
+    margin-top: .6em
+
+  #wrapper
+    margin-left: 6em
+
+  .admin-logo
+    font-size: 3em
+    padding-top: 2.9em
+    padding-left: 3.5em
+
+  .log-in
+    padding-top: 1.35em
+    padding-bottom: 1em
+    height: 6em
+    width: 70%
+    margin-left: 6em
+    border: 5px solid #a2f4c7
+
+    #username, #password
+      max-width: 20em
+
+  .lolz
+    background-position: -651.9481506347656px -179.98948669433594px
+    width: 184px
+    height: 208px
+
+  header
+    height: 2.8em
+
+  .column
+    height: 14em
+    min-height: 90%
+
+  .submit
+    padding-top: .3em
+
+  .logo
+    font-size: 2em
+
+  .g-mode
+    background-position: -683.0000152587891px -410.00001525878906px
+    width: 50px
+    height: 36px
+
+  #like
+    background-position: -891.0000762939453px -529.0000152587891px
+    width: 121px
+    height: 176px
+
+  #g-like
+    background-position: -1026.0000762939453px -527.0000152587891px
+    width: 122px
+    height: 178px
+
+  #prev, #next
+    font-size: 2.5em
+    padding-top: 4.5em
+
+// desktop size
+sizes reflect different sprites
+@media (min-width: 64rem)
+  .admin-like
+    font-size: 1.5em
+    margin-top: .75em
+
+  .delete
+    font-size: 1.5em
+    margin-top: .75em
+
+  #wrapper
+    margin-left: 11em
+
+  .admin-logo
+    font-size: 4.5em
+    padding-top: 2.3em
+    padding-left: 2.5em
+
+  .log-in
+    padding-top: 2em
+    padding-bottom: 1em
+    height: 8em
+    max-width: 50em
+    margin-left: 11em
+    border: 7px solid #a2f4c7
+
+  .lolz
+    background-position: -374.9590759277344px -47.96733093261719px
+    width: 246px
+    height: 278px
+
+  header
+    height: 3.6em
+
+  .submit
+    padding-top: .75em
+
+  .g-mode
+    background-position: -771.0000152587891px -406.00001525878906px
+    width: 75px
+    height: 54px
+
+  .logo
+    font-size: 2.5em
+
+  #like
+    background-position: -538.0000152587891px -470.00001525878906px
+    width: 162px
+    height: 236px
+
+  #g-like
+    background-position: -713.0000152587891px -470.00001525878906px
+    width: 163px
+    height: 238px
+
+  #prev, #next
+    font-size: 3.5em
