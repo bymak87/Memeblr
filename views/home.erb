@@ -3,29 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>memeblr</title>
-  <link rel="stylesheet" href="./css/shoestring/0.0.1/shoestring-dev.css">
+  <link rel="stylesheet" href="./frontend/css/shoestring/0.0.1/shoestring.min.css">
   <script src="http://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
-  <div class='main-frame'>
-  <div class='g-mode'></div>
-  <div class="submit">
-      <input id="submit-image" type="text" placeholder="enter image url here"/>
-      <input type="submit" name="submit" id="submit" value="submit">
-  </div>
-  <div class='logo'>memeblr</div>
-    <div class='memes'>
-      <!-- list goes here -->
-      <div>
-        <a href="/" title="Close" class="close" method="get" action="/">X</a>
-
-      </div>
+  <header>
+    <div class='g-mode'></div>
+    <div class="submit">
+      <input id="submit-image" type="text" placeholder=" enter image url here"/>
     </div>
-    <div id='prev'></div>
-    <div id='next'></div>
-    <div id='like'></div>
+    <div class='logo'>memeblr</div>
+  </header>
+  <div class='column'>
+    <div id='prev'>prev</div>
+    <div id='next'>next</div>
   </div>
-<!-- <script src="js/app.js"></script> -->
+<script src="js/app.js"></script>
+<div id='like'></div>
+<div id='g-like'></div>
 </body>
-
 </html>

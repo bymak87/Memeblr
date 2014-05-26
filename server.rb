@@ -10,18 +10,19 @@ get '/' do
   erb :home
 end
 
-post '/admin' do
-  @name = params[:username]
-  @pass = params[:password]
-  @result = MEMEBLR::AdminLogin.run(@username, @password)
+get '/admin' do
+  # @name = params[:username]
+  # @pass = params[:password]
+  # @result = MEMEBLR::AdminLogin.run(@username, @password)
 
-  if @result[:success?]
-    session[:username] =@result[:username]
-    redirect to '/admin_page'
-  else
-    session[:error] = @result[:error]
-    redirect to '/'
-  end
+  # if @result[:success?]
+  #   session[:username] =@result[:username]
+  #   redirect to '/admin_page'
+  # else
+  #   session[:error] = @result[:error]
+  #   redirect to '/'
+  # end
+  erb :admin
 end
 
 post '/' do
