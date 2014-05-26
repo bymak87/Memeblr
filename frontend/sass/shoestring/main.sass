@@ -19,12 +19,20 @@ body
     margin-left: .5em
 
   #like
-    visibility: hidden
+    // visibility: hidden
+    display: none
     position: fixed
     bottom: 0
     margin-left: 1em
 
-.g-mode, #like
+  #g-like
+    // visibility: hidden
+    display: none
+    position: fixed
+    bottom: 0
+    margin-left: 1em
+
+.g-mode, #like, #g-like, #arrow-left, #arrow-right
   background: $thug-life
 
 .lolz
@@ -81,6 +89,23 @@ header
   min-width: 100%
   background-size: 45%
 
+#next
+  background: pink
+  width: 15%
+  height: 100%
+  position: absolute
+  margin-left: 85%
+  float: left
+  opacity: 0.1
+
+#prev
+  background: pink
+  width: 15%
+  height: 100%
+  position: relative
+  float: left
+  opacity: 0.1
+
 .submit
   float: right
   vertical-align: middle
@@ -108,6 +133,11 @@ header
   width: 69px
   height: 100px
 
+#g-like
+  background-position: -1243.0000762939453px -601.0000152587891px
+  width: 70px
+  height: 101px
+
 #username, #password
   text-align: center
   display: block
@@ -117,6 +147,12 @@ header
 
 #bot-cushion
   height: 4em
+
+// #arrow-right
+
+
+// #arrow-left
+
 
 // then use tablet size
 @media (min-width: 40rem)
@@ -175,6 +211,11 @@ header
     width: 121px
     height: 176px
 
+  #g-like
+    background-position: -1026.0000762939453px -527.0000152587891px
+    width: 122px
+    height: 178px
+
 // desktop size
 sizes reflect different sprites
 @media (min-width: 64rem)
@@ -226,3 +267,7 @@ sizes reflect different sprites
     width: 162px
     height: 236px
 
+  #g-like
+    background-position: -713.0000152587891px -470.00001525878906px
+    width: 163px
+    height: 238px
