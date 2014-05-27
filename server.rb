@@ -12,7 +12,7 @@ end
 post '/' do
 
   @result = MEMEBLR::AddMeme.new.run(params)
-  erb :list
+  redirect to '/'
 end
 
 get '/admin' do
