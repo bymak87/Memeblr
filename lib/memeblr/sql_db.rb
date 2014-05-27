@@ -27,7 +27,7 @@ class MEMEBLR::SQLDB
   #MEMES
 
   def build_meme(data)
-    MEMEBLR::Memes.new(data[:id], data[:url], data[:like])
+    MEMEBLR::Memes.new(data[:id], data[:url])
   end
 
   def create_meme(data)
@@ -57,14 +57,21 @@ class MEMEBLR::SQLDB
     SQL
   end
 
-  def like_meme(data)
-    @db.execute <<-SQL
-    UPDATE memes
-    SET like = true
-    WHERE id = "#{data[:id]}"; #maybe not string
+  def list_memes
+    records = @db.execute <<-SQL
+    SELECT * FROM memes
     SQL
-    build_meme(data)
+    records.map! {|row| build_meme(id: row[0], url: row[1])}
   end
+
+  # def like_meme(data)
+  #   @db.execute <<-SQL
+  #   UPDATE memes
+  #   SET like = true
+  #   WHERE id = "#{data[:id]}"; #maybe not string
+  #   SQL
+  #   build_meme(data)
+  # end
 
 #Admin#
 
@@ -105,6 +112,6 @@ end
 #singleton
   module MEMEBLR
     def self.db
-      @___db_instance ||= SQLDB.new("test.db")
+      @___db_instance ||= SQLDB.new("new.db")
     end
   end

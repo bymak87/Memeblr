@@ -1,11 +1,11 @@
 module MEMEBLR
   class ListMemes < Command
 
-    def run(meme_data)
+    def run
 
-      memes = MEMEBLR.db.list_memes(meme_data[:id])
+      memes = MEMEBLR.db.list_memes
 
-      return {:error => "meme does not exist"} if memes.nil?
+      return {:error => "There are no memes."} if memes.nil?
 
 
       {:success => true, :meme => memes}

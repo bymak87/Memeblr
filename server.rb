@@ -5,6 +5,7 @@ require_relative './lib/memeblr.rb'
 set :bind, '0.0.0.0'
 
 get '/' do
+  @list = MEMEBLR::ListMemes.new.run
   erb :home
 end
 

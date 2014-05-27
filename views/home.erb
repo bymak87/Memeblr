@@ -16,10 +16,13 @@
     </div>
     <div class='logo'>memeblr</div>
   </header>
-  <div class='column'>
-    <div id='prev'>prev</div>
-    <!-- <img src="<%=params%>"/>
- -->    <div id='next'>next</div>
+  <div class='meme'>
+    <!-- <div id='prev'>prev</div> -->
+    <%@list[:meme].each do |meme|%>
+    <img src ="<%= meme.url %>">
+    <%end%>
+    <!-- {success: true, meme: memes} -->
+    <!-- <div id='next'>next</div> -->
   </div>
 <script src="js/app.js"></script>
 <div id='like'></div>
