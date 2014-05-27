@@ -5,15 +5,13 @@ require_relative './lib/memeblr.rb'
 set :bind, '0.0.0.0'
 
 get '/' do
-   # meme = MEMEBLR::GetMeme.new.run
-   # @meme = meme.meme
   erb :home
 end
 
 post '/' do
-  p params
-  # url = params[:url]
-  # MEMEBLR::AddMeme.run(url)
+
+  @result = MEMEBLR::AddMeme.new.run(params)
+  erb :list
 end
 
 get '/admin' do
@@ -35,7 +33,4 @@ get '/admin_view' do
   erb :admin_view
 end
 
-post '/' do
-  @url = params[:url]
-  erb :home
-end
+

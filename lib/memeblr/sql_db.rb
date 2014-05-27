@@ -11,7 +11,7 @@ class MEMEBLR::SQLDB
     CREATE TABLE IF NOT EXISTS memes(
       id integer PRIMARY KEY AUTOINCREMENT,
       url string,
-      like boolean,
+      like boolean
       );
       SQL
 
@@ -19,7 +19,7 @@ class MEMEBLR::SQLDB
     CREATE TABLE IF NOT EXISTS admins(
       id integer PRIMARY KEY AUTOINCREMENT,
       username string,
-      password string,
+      password string
       );
       SQL
   end
