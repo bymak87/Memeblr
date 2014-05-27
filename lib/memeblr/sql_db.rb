@@ -105,6 +105,6 @@ end
 #singleton
   module MEMEBLR
     def self.db
-      @___db_instance ||= SQLDB.new("app.db")
+      @___db_instance ||= SQLDB.new("test.db")
     end
   end
