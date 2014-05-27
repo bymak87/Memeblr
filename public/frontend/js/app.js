@@ -5,12 +5,9 @@
   $("div.meme > a").not(":first-child").hide();
 
   $('#next').on('click', function() {
-    var maxLength = +$("div.meme img").length;
     $currentImg = $("div.meme img[data-id="+ currentImageId +"]");
     $currentImg.hide();
-    if (!maxLength) {
-      currentImageId += 1;
-    }
+    currentImageId += 1;
     $("div.meme img[data-id="+ currentImageId +"]").show();
   })
 
@@ -31,8 +28,6 @@
     });
   });
 })();
-
-
 
 
   // $('.g-mode').on('click', function() {
