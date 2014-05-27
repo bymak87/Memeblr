@@ -12,8 +12,8 @@ end
 
 post '/' do
   p params
-  url = params[:url]
-  MEMEBLR::AddMeme.run(url)
+  # url = params[:url]
+  # MEMEBLR::AddMeme.run(url)
 end
 
 get '/admin' do

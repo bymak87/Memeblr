@@ -10,7 +10,6 @@ class MEMEBLR::SQLDB
     @db.execute <<-SQL
     CREATE TABLE IF NOT EXISTS memes(
       id integer PRIMARY KEY AUTOINCREMENT,
-      title string,
       url string,
       like boolean,
       );
