@@ -38,9 +38,7 @@ body
   background: $admin
 
 .meme
-  width: 70%
-  margin-right: 15%
-  margin-left: 15%
+  width: 100%
 
 // .column
 //   background: url($current-meme) no-repeat center
@@ -176,6 +174,11 @@ header
 
 // then use tablet size
 @media (min-width: 40rem)
+  .meme
+    width: 70%
+    margin-right: 15%
+    margin-left: 15%
+
   .admin-like
     font-size: 1.25em
     margin-top: .6em
@@ -200,8 +203,8 @@ header
     margin-left: 6em
     border: 5px solid #a2f4c7
 
-    #username, #password
-      max-width: 20em
+  #username, #password
+    max-width: 20em
 
   .lolz
     background-position: -651.9481506347656px -179.98948669433594px
@@ -220,6 +223,7 @@ header
 
   .logo
     font-size: 2em
+    margin-left: 30%
 
   // .g-mode
   //   background-position: -683.0000152587891px -410.00001525878906px
@@ -243,6 +247,11 @@ header
 // desktop size
 sizes reflect different sprites
 @media (min-width: 64rem)
+  .meme
+    width: 45%
+    margin-right: 25%
+    margin-left: 25%
+
   .admin-like
     font-size: 1.5em
     margin-top: .75em
@@ -285,6 +294,7 @@ sizes reflect different sprites
 
   .logo
     font-size: 2.5em
+    margin-left: 15%
 
   #like
     background-position: -538.0000152587891px -470.00001525878906px
