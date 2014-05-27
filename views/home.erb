@@ -18,6 +18,7 @@
   </header>
   <div class='meme'>
     <!-- <div id='prev'>prev</div> -->
+    <%@list[:meme].reverse!%>
     <%@list[:meme].each do |meme|%>
     <img src ="<%= meme.url %>">
     <%end%>
