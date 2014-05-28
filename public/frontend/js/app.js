@@ -1,5 +1,10 @@
 (function() {
-  // initiate th
+
+  $(document).dblclick(function(event){
+    event.preventDefault();
+    return false;
+  });
+
   var currentImageId = 1;
   var imageTotal = $('div .meme img').length
 
@@ -11,8 +16,6 @@
       $currentImg.hide();
       currentImageId += 1;
       $("div.meme img[data-id="+ currentImageId +"]").show();
-    } else {
-      return false;
     }
   })
 
@@ -32,6 +35,7 @@
       return text === 'like' ? 'dislike' : 'like';
     });
   });
+
 })();
 
 

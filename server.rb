@@ -23,11 +23,11 @@ post '/admin-admin_view' do
   puts params
   if "shizzy" == params[:username] && "password" == params[:password]
     redirect to '/admin_view'
-  # else
-  # return "Try again"
-    # redirect to '/'
+  else
+  return "Try again"
+    redirect to '/admin'
   end
-  erb :admin
+  # erb :admin
 end
 
 get '/admin_view' do

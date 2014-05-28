@@ -7,7 +7,6 @@ module MEMEBLR
       self.new.run(data)
     end
 
-
     def self.add(data)
       self.new.add(data)
     end

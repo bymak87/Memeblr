@@ -10,7 +10,6 @@ require_relative '../spec_helper.rb'
     @sql = SQLite3::Database.new("test.db")
   end
 
-
  it "should return a meme on success" do
     data = {url: "blb.org"}
     result = subject.run(data)

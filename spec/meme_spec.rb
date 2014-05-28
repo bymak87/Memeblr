@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe 'Memes' do
 
-
   it 'exists' do
     expect(Memes).to be_a(Class)
   end

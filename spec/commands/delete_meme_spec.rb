@@ -10,6 +10,4 @@ describe 'DeleteMeme' do
     @sql = SQLite3::SQLDB.new("meme.db")
   end
 
-
-
 end

@@ -8,7 +8,5 @@ class MEMEBLR::LikeMeme
       meme: meme
     }
 
-
-
   end
 end

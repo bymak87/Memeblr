@@ -6,7 +6,6 @@ module MEMEBLR
       return {:success? => false, :error => "Meme not found"} if meme.nil?
       {:success? => true, :meme => meme}
 
-
     end
   end
 end

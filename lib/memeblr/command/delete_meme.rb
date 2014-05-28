@@ -8,5 +8,6 @@ class MEMEBLR::DeleteMeme
       success?: true,
       meme: meme
     }
+
   end
 end
