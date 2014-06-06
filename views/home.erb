@@ -11,9 +11,16 @@
 <div class='column'>
   <div id='prev'>prev</div>
   <div class='meme'>
+<<<<<<< HEAD
 
     <% @list[:meme].each do |meme|%>
     <img data-id="<%= meme.id %>" src ="<%= meme.url %>">
+=======
+    <!-- <div id='prev'>prev</div> -->
+    <%@list[:meme].reverse!%>
+    <%@list[:meme].each do |meme|%>
+    <img src ="<%= meme.url %>">
+>>>>>>> 15194e9da27342bd0f5dce7f05e75765c27356cd
     <%end%>
 
   </div>
