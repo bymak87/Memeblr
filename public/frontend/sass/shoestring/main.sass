@@ -2,6 +2,10 @@
 @import clearfix
 @import vars
 @import grid
+@import mixins
+
+*
+  +user-select
 
 body
   background: #0f0f0f
@@ -245,7 +249,7 @@ header
     padding-top: 4.5em
 
 // desktop size
-sizes reflect different sprites
+// sizes reflect different sprites
 @media (min-width: 64rem)
   .meme
     width: 45%

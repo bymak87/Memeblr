@@ -1,9 +1,8 @@
 (function() {
-
-  $(document).dblclick(function(event){
-    event.preventDefault();
-    return false;
-  });
+  // $(document).dblclick(function(event){
+  //   event.preventDefault();
+  //   return false;
+  // });
 
   var currentImageId = 1;
   var imageTotal = $('div .meme img').length
